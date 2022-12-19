@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspects</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/07c0b83d94.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="content">
+        <!--? SIDEBAR -->
+        <div id="sidebar">
+            <div id="inner-sidebar">
+                <h3 id="sidebar-logo"><span class="material-icons-sharp logo-icon">
+                        nights_stay
+                    </span> Aspects</h3>
+                <div class="sidebar-section">
+                    <p class="sidebar-section-header" data-section="0">
+
+                        Current Lists <span class="material-icons-outlined sidebar-add">
+                            add
+                        </span> </p>
+
+                    <div id="sidebar-list-view">
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar-footer">
+                <div id="inner-sidebar-footer">
+                    <span id="delete-list" class="material-icons-outlined">
+                        delete_outline
+                    </span>
+                    <a id="about" href="https://twitter.com/" target="_blank">Designed By Ben Vilakazi</a>
+                </div>
+
+            </div>
+        </div>
+        <!--? MAIN SECTION -->
+        <div id="main">
+            <div id="active-list">
+                <h3 id="active-items-header">Current List</h3>
+                <div id="input-center-box">
+                    <input maxlength="40" class="input-box" id="new-todo-input" type="text" placeholder="New To-Do">
+                    <button id="add-item-button"><span id="add-item-button-icon" class="material-icons-outlined">
+                            add_circle_outline
+                        </span></button>
+                    <button id="delete-all-button"><span id="add-item-button-icon" class="material-icons-outlined">
+                            clear_all
+                        </span></button>
+                </div>
+                <div id="inner-active-list">
+                </div>
+            </div>
+            <!--? DETAILS -->
+            <div id="details">
+                <h3 id="details-header">Details <span id="delete-todo" class="material-icons-outlined">
+                        delete_outline
+                    </span></h3>
+                <div id="details-inner">
+                    <div id="notes">
+                        <h3 id="notes-header">Notes</h3>
+                        <div id="notes-inner">
+                            <p contenteditable="true" id="notes-text">
+                            </p>
+                        </div>
+                    </div>
+                    <div id="status">
+                        <div id="dates">
+                            <h3 id="dates-header">Dates</h3>
+                            <div id="dates-text">
+                                <p id="date-added-text"> Date Added: 4/27/21
+                                </p>
+                                <p id="date-completed-text"> Date Completed: N/A
+                                </p>
+                            </div>
+                        </div>
+                        <div id="priority">
+                            <h3 id="priority-header">Priority</h3>
+                            <button class="normal-priority-button" id="priority-button">Normal</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
